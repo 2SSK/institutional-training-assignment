@@ -1,4 +1,5 @@
 #include "store.h"
+#include <bits/stdc++.h>
 #include <fstream>
 #include <iostream>
 
@@ -29,7 +30,7 @@ void Store::searchMedicine(const std::string &name) const {
       return;
     }
   }
-  cout << "Medicine not found.\n";
+  cout << "\nMedicine not found.\n";
 }
 
 void Store::loadFromFile() {
@@ -41,7 +42,7 @@ void Store::loadFromFile() {
     }
     file.close();
   } else {
-    cerr << "Failed to open medicines.txt for reading.\n";
+    cerr << "\nFailed to open medicines.txt for reading.\n";
   }
 }
 
@@ -53,6 +54,6 @@ void Store::saveToFile() const {
     }
     file.close();
   } else {
-    cerr << "Failed to open medicines.txt for writing.\n";
+    cerr << "\nFailed to open medicines.txt for writing.\n";
   }
 }

@@ -1,6 +1,6 @@
 #include "interface.h"
 #include "store.h"
-#include <iostream>
+#include <bits/stdc++.h>
 
 using namespace std;
 
@@ -28,9 +28,9 @@ int main() {
       cout << "Exiting...\n";
       return 0;
     default:
-      cout << "Invalid choice. Please try again.\n";
+      cout << "\nInvalid choice. Please try again.\n";
     }
-    cout << "Press Enter to continue...";
+    cout << "\nPress Enter to continue...";
     cin.get();
   }
 
