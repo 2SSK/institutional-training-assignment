@@ -34,11 +34,19 @@ The project is divided into several files for better organization:
    cd institutional-training-assignment
    ```
 
-2. Compile the project using the provided script:
+2. Give execute permission to the `compile.sh` script:
+
+   ```sh
+   chmod +x compile.sh
+   ```
+
+3. Compile the project using the provided script:
 
    ```
    ./compile.sh
    ```
+
+   > This script will automatically compile and execute the program.
 
 ### Usage
 
@@ -57,14 +65,14 @@ The application uses a text file name `medicines.txt` to store medicine data. Th
 
 ### Code Overview
 
-#### main.cpp
+- #### main.cpp
 
 The main file that initializes the `Store` and `Interface` objects adn handles the main loop for user interaction.
 
-#### interface.cpp & interface.h
+- #### interface.cpp & interface.h
 
 Contains the `Interface` class responsible for displaying menus and handling user input for various actions.
 
-#### store.cpp & store.h
+- #### store.cpp & store.h
 
 Contains the `store` class responsible for managing the list of medicines, including adding, viewing, and searching for medicines. It also handles loading from and saving to the `medicines.txt` file.
