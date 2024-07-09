@@ -12,7 +12,8 @@ int main() {
   while (true) {
     interface.displayMenu();
     cin >> choice;
-    cin.ignore(numeric_limits<streamsize>::max(), '\n'); // Clear the input buffer
+    cin.ignore(numeric_limits<streamsize>::max(),
+               '\n'); // Clear the input buffer
 
     switch (choice) {
     case 1:
@@ -25,6 +26,9 @@ int main() {
       interface.searchMedicine(store);
       break;
     case 4:
+      interface.purchaseMedicine(store);
+      break;
+    case 5:
       cout << "Exiting...\n";
       return 0;
     default:

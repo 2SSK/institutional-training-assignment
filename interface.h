@@ -9,6 +9,7 @@ public:
   void addMedicine(Store &store) const;
   void viewAllMedicines(const Store &store) const;
   void searchMedicine(const Store &store) const;
+  void purchaseMedicine(Store &store) const;
 };
 
 #endif

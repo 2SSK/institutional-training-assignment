@@ -18,6 +18,7 @@ public:
   void addMedicine(const std::string &name, int quantity, double price);
   void viewAllMedicines() const;
   void searchMedicine(const std::string &name) const;
+  bool purchaseMedicine(const std::string &name, int quantity);
 
 private:
   std::vector<Medicine> medicines;

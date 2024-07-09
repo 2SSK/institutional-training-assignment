@@ -33,6 +33,23 @@ void Store::searchMedicine(const std::string &name) const {
   cout << "\nMedicine not found.\n";
 }
 
+bool Store::purchaseMedicine(const std::string &name, int quantity) {
+  for (auto &medicine : medicines) {
+    if (medicine.name == name) {
+      if (medicine.quantity >= quantity) {
+        medicine.quantity -= quantity;
+        cout << "\nPurchased " << quantity << " of " << name << ".\n";
+        return true;
+      } else {
+        cout << "\nNot enough stock available.\n";
+        return false;
+      }
+    }
+  }
+  cout << "\nMedicine not found.\n";
+  return false;
+}
+
 void Store::loadFromFile() {
   std::ifstream file("medicines.txt");
   if (file.is_open()) {
@@ -50,7 +67,8 @@ void Store::saveToFile() const {
   std::ofstream file("medicines.txt");
   if (file.is_open()) {
     for (const auto &medicine : medicines) {
-      file << medicine.name << " " << medicine.quantity << " " << medicine.price << "\n";
+      file << medicine.name << " " << medicine.quantity << " " << medicine.price
+           << "\n";
     }
     file.close();
   } else {
