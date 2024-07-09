@@ -9,6 +9,7 @@ This is a C++ project developed as part of the 2024 Summer Institutional Trainin
 - **Add Medicine**: Add new medicines to the store inventory.
 - **View All Medicines**: Display all the medicines available in the store.
 - **Search Medicine**: Search for a medicine by its name.
+- **Purchase Medicine**: Reduce the quantity of a medicine when it is purchased.
 
 ## Project Structure
 
@@ -55,6 +56,7 @@ The project is divided into several files for better organization:
    - Add Medicine
    - View All Medicines
    - Search Medicine by Name
+   - Purchase Medicine
    - Exit
 
 2. Enter the number corresponding to the action you wnat to perform and follow the onscreen instructions.
