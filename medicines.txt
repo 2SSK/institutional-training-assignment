@@ -1,3 +1,4 @@
-Paracetamol 10 2
+Paracetamol 8 2
 Unizyme 12 1.5
 maggi 5 1.25
+Paracetamol 5 2
